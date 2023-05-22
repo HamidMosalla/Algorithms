@@ -1,0 +1,2 @@
+﻿Question: Write a function to find the frequency of each element in an array using a hashtable.
+
