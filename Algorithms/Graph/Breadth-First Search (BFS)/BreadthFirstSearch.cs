@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Algorithms.Search.Binary_Search
 {
-    public class BreadthFirstSearch
+    public class BreadthFirstSearchAlgo
     {
-        public void BFS(Dictionary<int, List<int>> graph, int start)
+        public void BreadthFirstSearch(Dictionary<int, List<int>> graph, int start)
         {
             var visited = new HashSet<int>();
             var queue = new Queue<int>();
@@ -31,6 +31,5 @@ namespace Algorithms.Search.Binary_Search
                 }
             }
         }
-
     }
 }

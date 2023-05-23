@@ -1,2 +1,16 @@
 ﻿Question: Implement Dijkstra's algorithm for finding shortest path in a graph.
 
+Here is a step-by-step sketch of how it works:
+Create a set of all the unvisited nodes. Initially, this will be every node except the starting node.
+
+Assign every node a tentative distance from the starting node: set it to zero for the initial node and to infinity for all other nodes.
+
+For the current node, consider all of its unvisited neighbors and calculate their tentative distances. If the newly calculated tentative distance is less than the current assigned value, update the shortest distance.
+
+After considering all of the neighbors of the current node, mark the current node as visited. A visited node will not be checked again.
+
+Select the unvisited node that is marked with the smallest tentative distance, and set it as the new "current node", then go back to step 3.
+
+Repeat this process until all the nodes in the graph have been visited.
+
+Dijkstra's algorithm assumes that the cost of moving from one node to another is always non-negative. This is a key difference from the Bellman-Ford algorithm, which can handle graphs with negative edge weights.
